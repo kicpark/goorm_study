@@ -15,7 +15,6 @@ def backtracking(k, left, right):
     if seq[left] != seq[right]:
         backtracking(k + 1, left + 1, right)
         backtracking(k + 1, left, right - 1)
-        backtracking(k + 2, left + 1, right - 1)
     else:
         backtracking(k, left + 1, right - 1)
 
