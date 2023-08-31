@@ -29,7 +29,7 @@ int main(){
             // 예산이 낮은거부터 몽땅 맵으로 받음
             type_count[type]++;
         }
-        int init = 0;
+        
         int sum = 0;
         pair<int,int> pq;
         map<string,pair<int,int> > bag;
