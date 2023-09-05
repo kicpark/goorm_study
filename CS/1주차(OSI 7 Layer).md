@@ -7,6 +7,7 @@
 
 ![7Layer](http://wiki.hash.kr/images/7/71/OSI_7_계층.jpg)
 
+
 ### 왜 이렇게 나눠놨죠? 그냥 한 번에 쓰면 될 것같은데..
 
 개발자는 효율이 중요하죠..
@@ -18,20 +19,30 @@
 
 ~~5계층에서 7계층으로 바꾸는 것에 실패했다는데..현업에 있어본 경험이 없으니..~~
 
+
+
 ## 각 계층에 대한 소개
 
+
+
 1. 물리 (Physical)
+
 
 물리 계층은 말그대로 전송 매체의 물리적 인터페이스에 대한 사항을 기술.
 
 여기서는 비트 교환 문제를 다룸.
 
+![](https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2019-07-07-CTFT/pic1.png)
+
+
 하드웨어 시스템으로 구현된다. (2계층부터는 소프트웨어 시스템으로 구현)
 > ~~Fourier Transform..전기전자에서 하겠죠?~~
-![](https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2019-07-07-CTFT/pic1.png)
+
+
 
 2. 데이터 링크 (Data Link)
 > Data: Frame
+
 
 물리 계층을 통해 전송되는 데이터의 물리적 전송 오류를 해결함.
 => 네트워크 계층에 신뢰성 있는 패킷 전송을 보장.
@@ -41,8 +52,11 @@
 > CRC, Parity bit
 > 슬라이딩 윈도우 프로토콜 (알고리즘에서 봤을 수도..), 피기 배킹..
 
+
+
 3. 네트워크 (Network)
 > Data: Packets(Datagram?)
+
 
 라우팅 문제를 처리.
 
@@ -58,8 +72,11 @@ IP 주소를 사용하여 라우팅.
 
 ![](https://2.bp.blogspot.com/-HRi64imuP9M/V5axFei6SSI/AAAAAAAAAaY/HUclv6l3o50Y6dlt6_a5b9zl3u3-pzkkQCLcB/s1600/2.PNG)
 
+
+
 4. 전송 (Transport)
 > Data: Segment(TCP) / Datagram(UDP)
+
 
 전송 계층은 송신 프로세스와 수신 프로세스를 직접 연결하는 End-to-End 통신 기능을 제공.
 
@@ -79,8 +96,12 @@ UDP: 비연결형 서비스 제공. (일단 보내고 봄., Best Effort 방식)
 TCP/IP 5계층에서는 이 상위 계층들이 Application Layer
 - 일반적으로는 세 계층의 기능이 한 프로그램에 묶어서 구현됨.
 
+
+
 5. 세션 (Session)
 > 텔넷, FTP, 등.. well-known port number로 연결
+
+
 상위 계층에 제공하는 기능은 세션 연결의 설정과 해제, 세션 메시지 전송 등..
 
 두 응용 프로세스 간의 세션을 설정하기 위해 세션 연결.
@@ -88,7 +109,10 @@ TCP/IP 5계층에서는 이 상위 계층들이 Application Layer
 
 ~~세션과 쿠키에서 자세하게 알아볼 것 같아요..?~~
 
+
+
 6. 표현 (Presentation)
+
 
 응용 프로세스 사이에 전송되는 메시지의 표현 방법을 다룬다.
 > ex. 추상 문법, ASN.1
@@ -97,7 +121,10 @@ TCP/IP 5계층에서는 이 상위 계층들이 Application Layer
 => zip..다들 아시죠?(손실 압축과 비손실 압축 등도 있는데..)
 => 데이터 encryption 기능 또한 표현 계층에 속함.
 
+
+
 7. 응용 (Application)
+
 
 응용 계층의 역할은 하부 계층을 이용해 사용자에게 편리한 응용 환경을 제공.
 
