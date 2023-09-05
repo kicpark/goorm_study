@@ -1,5 +1,5 @@
-OSI 7 Layers
-============
+# OSI 7 Layers
+
 
 ## OSI 7 Layer란?
 
