@@ -1,39 +1,50 @@
 #include <iostream>
 #include <vector>
-
+#include <stack>
 using namespace std;
-int n,m;
-bool visited[9]={false,};
 
+int n, m;
+bool visited[9];
+int arr[9];
 
-void bt(int idx,int cnt){
+stack<int> s;
 
-  if(cnt==m){
-    cout << cnt << endl;
-    for(int i=1;i<=n;i++){
-      if(visited[i]){
-        cout << i << " ";
-      }
+void BT(int index, int cnt)
+{
+
+  // 종료조건
+  if (cnt == m)
+  {
+    for (int i = 0; i < m; i++)
+    {
+      cout << arr[i] << ' ';
     }
     cout << '\n';
-    return; // 끝내고
-  }else{
-    for(int i=idx;i<=n;i++){
-      if(!visited[i]){
-        visited[i]=true;
-        bt(idx+1,cnt+1);
-        visited[i]=false;
+    return;
+  }
+  else
+  {
+    for (int i = index; i <= n; i++)
+    {
+      if (!visited[i])
+      {
+        visited[i] = true;
+        arr[cnt] = i;
+        
+        BT(i + 1, cnt + 1);
+        //cout << "cnt:" << cnt << "i:" << i << endl;
+        visited[i] = false;
       }
     }
   }
 }
 
-int main(){
+int main()
+{
   ios_base::sync_with_stdio(false);
+  cin.tie(0);
+
   cin >> n >> m;
 
-  bt(1,1);
-
-
-
+  BT(1, 0);
 }
