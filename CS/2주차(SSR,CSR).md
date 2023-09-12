@@ -22,7 +22,7 @@
 **따라서 더 빠른 첫 로딩을 제공할 수 있지만, 페이지간의 이동에서 모든것들을 매번 다운로드해야합니다.** 
 브라우저를 넘어 훌륭하게 동작하고 개발 프로세스를 돕는 많은 도구들이 있지만, 각 페이지를 로딩할 때마다 서버를 거쳐야 한다는 점에서 로딩 속도 및 성능으로 인식되는 일반적인 측면에서 어려움이 있습니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/6a4103eb-951e-4f62-8818-dd4155045e01/Untitled.png)
+![Untitled](https://velog.velcdn.com/images/sjc0829/post/31d64940-7711-4fd7-9af8-c17ef6a3c688/image.png)
 
 > 
 > 
@@ -46,7 +46,7 @@
 
 </aside>
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/c71a19e2-c487-46fe-88f9-16fdc9801f32/Untitled.png)
+![Untitled](https://velog.velcdn.com/images/sjc0829/post/e1b5b340-8394-4884-9f69-741db611034c/image.png)
 
 ---
 
@@ -57,7 +57,7 @@
 클라이언트 사이드 랜더링(CSR)은 웹 사이트가 다른 페이지로 이동할 때 브라우저에서 거의 즉시 업데이트될 수 있도록 해주지만, 시작할 때 더 많은 초기 다운로드와 추가 랜더링이 필요하다.
 **첫 방문 시 느리지만, 재차 같은 페이지를 방문할 때 빠른 속도로 로딩된다.**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/835f138c-3aa2-46a2-b062-e10d08d9722d/Untitled.png)
+![Untitled](https://velog.velcdn.com/images/sjc0829/post/ad15f148-01c5-4c66-8e1d-754b3d9a4a76/image.png)
 
 > 
 > 
@@ -85,7 +85,7 @@
 
 </aside>
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/7925cddf-4b0d-4e01-8bdc-8af581d83f89/Untitled.png)
+![Untitled](https://velog.velcdn.com/images/sjc0829/post/db4d7183-adf5-4049-829f-d716b6c14132/image.png)
 
 ---
 
